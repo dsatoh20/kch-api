@@ -5,4 +5,4 @@ from .models import Clubs
 class ClubsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Clubs
-        fields = ['id', 'details', 'lastUpdated'] # clientからのClickOnLinkのPOSTを受け付けるため、自動生成されたidを含める
+        fields = ['id', 'slug', 'details', 'lastUpdated'] # clientからのClickOnLinkのPOSTを受け付けるため、自動生成されたidを含める
