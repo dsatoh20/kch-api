@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn osaka_translator.wsgi --log-file -
+web: gunicorn kch_api.wsgi --log-file -
